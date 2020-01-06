@@ -59,19 +59,22 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  Logout() {
-    this.router.navigate(['/auth/login']);
-  }
 
   indian() {
-    this.router.navigate(['/home/indian']);
+    this.router.navigate(['food/food-list/indian']);
   }
 
   chinese() {
-    this.router.navigate(['/home/chinese']);
+    this.router.navigate(['food/food-list/chinese']);
   }
 
   american() {
-    this.router.navigate(['/home/american']);
+    this.router.navigate(['food/food-list/american']);
   }
+  
+  
+  Logout() {
+    this.router.navigate(['/auth/login']);
+  }
+  
 }

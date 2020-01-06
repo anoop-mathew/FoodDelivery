@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <span style="font-size:30px;cursor:pointer;color: white" (click)="openNav()">&#9776; <img
+      src="/assets/images/logo.png" width="100" height="50"> </span>
+
+  <form class="form-inline">
+    <a href="#about"><button type="button" class="btn btn-link" style="color: white;">Home</button></a>
+  
+    <a href="#"><button type="button" class="btn btn-link" style="color: white;">Cart</button></a>
+    <a class="pointer" (click)="Logout()" style="color: white;">Logout</a>
+  </form>
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;<img src="/assets/images/logo.png" width="100" height="50"> 
+  <a class="text-white">
+    <h1>Food Category</h1>
+  </a>
+  <a class="pointer" (click)="indian()" class="text-white" >Indian</a>
+  <a class="pointer" (click)="chinese()" class="text-white" >Chinese</a>
+  <a class="pointer" (click)="american()" class="text-white" >American</a>
+ 
+</div>
+
+
+<!-- <div id="main">
+          
+      
+</div> -->

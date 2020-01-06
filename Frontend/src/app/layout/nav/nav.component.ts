@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '@env';
 import { Observable } from 'rxjs';
 import { ThemeService } from 'app/core/service/theme.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -21,7 +22,8 @@ export class NavComponent implements OnInit {
   ];
 
   constructor(
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -30,5 +32,10 @@ export class NavComponent implements OnInit {
 
   toggleTheme(checked: boolean) {
     this.themeService.setDarkTheme(checked);
+  }
+
+  
+  Logout() {
+    this.router.navigate(['/auth/login']);
   }
 }

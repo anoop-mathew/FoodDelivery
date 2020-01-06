@@ -1,38 +1,21 @@
-<!-- 
-   
-	 <script> 
-    $(function(){
-      $("#food").load("home.html"); 
-    });
-    </script>   -->
 
-<!--   
-  <div class="header">
-	 <img src="/assets/logo.png"  width="100" height="50">
-       <div class="header-right">
-	   <a href="home.html"><button  type="button"  class="btn btn-link"  >Home</button></a>
-	   <a href="home.html#food" ><button  type="button"  class="btn btn-link" >Food Category</button></a>
-	    <a href="login.html"><button  type="button" class="btn btn-outline-danger" >Logout</button></a>
-      </div>
-   </div> -->
-   <nav class="navbar">
-    <img src="/assets/images/logo.png"  width="100" height="50">
-    <form class="form-inline">
-       
-        <a class="pointer" (click)="home()" style="color: white;">Home</a>
-        <a href="#foodCategory" ><button  type="button"  class="btn btn-link"  style="color: white;">Food Category</button></a>
-        <a class="pointer" (click)="logout()" style="color: white;">Logout </a>
-    </form>
-  </nav>
   <div class="wrap1">
- 
+     
        <div class="container">
 
 
         <div class="main-title"  style="text-align: center;" >
             <h1 style="color:white">Indian Food</h1><br>
         </div>
-      
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input [(ngModel)]="search" (ngModelChange)="searchVendor(search)" name="sName" type="search" class="form-control mr-sm-2" type="search" placeholder="Search: Iteam Name / Rate " aria-label="Search">
+               
+                <button (click)="searchVendor(searchstring)"class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </nav>
+       <br>
         <div class="row mgn-btm wow">
 		 <span>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
