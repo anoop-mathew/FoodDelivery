@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from '@shared/shared.module';
 import { FoodComponent } from './food.component';
-import { IndianComponent } from './page/indian/indian.component';
-import { ChineseComponent } from './page/chinese/chinese.component';
-import { AmericanComponent } from './page/american/american.component';
+import { SidenavComponent } from 'app/layout/sidenav/sidenav.component';
+import { FoodDetailsComponent } from './food-details/food-details.component';
+import { FoodCheckoutComponent } from './food-checkout/food-checkout.component';
+import { FoodCartComponent } from './food-cart/food-cart.component';
+import { SharedModule } from '@shared/shared.module';
 import { FoodRoutingModule } from './food.routing';
+
+
+
 
 
 
 @NgModule({
   declarations: [
     FoodComponent,
-    IndianComponent,
-    ChineseComponent,
-    AmericanComponent
+    SidenavComponent,
+    FoodDetailsComponent,
+    FoodCheckoutComponent,
+    FoodCartComponent,
+    
   ],
   imports: [SharedModule, FoodRoutingModule],
   exports: [],

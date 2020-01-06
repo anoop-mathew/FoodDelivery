@@ -1,5 +1,14 @@
+
+.pointer {
+  cursor: pointer;
+}
+.navbar {
+  background-color: #221a16;
+}
+
+
 thead{
-    background-color:#01579b;
+    background-color:black;
    }
   
    .container{
@@ -14,7 +23,7 @@ thead{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color:#01579b;
+    background-color:#221a16;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;

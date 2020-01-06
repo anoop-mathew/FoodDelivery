@@ -8,6 +8,15 @@
      <div class="main-title"  style="text-align: center;">
       <h1 style="color:white">American Food</h1><br>
      </div>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input [(ngModel)]="search" (ngModelChange)="searchVendor(search)" name="sName" type="search" class="form-control mr-sm-2" type="search" placeholder="Search: Iteam Name / Rate " aria-label="Search">
+       
+        <button (click)="searchVendor(searchstring)"class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       </nav>
+      <br>
    
      <div class="row mgn-btm wow">
       <span>

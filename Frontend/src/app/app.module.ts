@@ -16,7 +16,7 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { SidenavComponent } from './layout/sidenav/sidenav.component';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +24,9 @@ import { SidenavComponent } from './layout/sidenav/sidenav.component';
     ContentLayoutComponent,
     NavComponent,
     FooterComponent,
-    AuthLayoutComponent,
-    SidenavComponent
+    AuthLayoutComponent
+ 
+   
     
   ],
   imports: [

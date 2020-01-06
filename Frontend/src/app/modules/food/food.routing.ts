@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-
-import { IndianComponent } from './page/indian/indian.component';
-import { ChineseComponent } from './page/chinese/chinese.component';
-import { AmericanComponent } from './page/american/american.component';
 import { FoodComponent } from './food.component';
+import { FoodCartComponent } from './food-cart/food-cart.component';
+import { FoodCheckoutComponent } from './food-checkout/food-checkout.component';
+import { FoodDetailsComponent } from './food-details/food-details.component';
+
+
+
+
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'indian',
+    redirectTo: 'food-list',
     pathMatch: 'full'
   },
   {
@@ -18,18 +20,22 @@ export const routes: Routes = [
     component: FoodComponent,
     children: [
       {
-        path: 'indian',
-        component: IndianComponent
+        path: 'cart',
+        component: FoodCartComponent
       },
       {
-        path: 'chinese',
-        component: ChineseComponent
+        path: 'checkout',
+        component: FoodCheckoutComponent
       },
       {
-        path: 'american',
-        component: AmericanComponent
+        path: 'details',
+        component: FoodDetailsComponent
       },
-  
+      {
+        path: 'food-list',
+        loadChildren: () =>
+          import('@modules/food/food-list/food-list.module').then(m => m.FoodListModule)
+      },
 ]
   }
 ];
