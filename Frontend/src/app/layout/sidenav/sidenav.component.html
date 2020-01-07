@@ -15,9 +15,13 @@
   <a class="text-white">
     <h1>Food Category</h1>
   </a>
-  <a class="pointer" (click)="indian()" class="text-white" >Indian</a>
-  <a class="pointer" (click)="chinese()" class="text-white" >Chinese</a>
-  <a class="pointer" (click)="american()" class="text-white" >American</a>
+  <!-- <a class="pointer" (click)="indian()" class="text-white" >Soups</a>
+  <a class="pointer" (click)="indian()" class="text-white" >Starters</a>
+  <a class="pointer" (click)="chinese()" class="text-white" >Main Course</a>
+  <a class="pointer" (click)="american()" class="text-white" >Desserts</a> -->
+  <ul *ngFor="let item of list">
+    <li class="pointer" class="text-white">{{item.value}}</li>
+    </ul>  
  
 </div>
 

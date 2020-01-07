@@ -13,6 +13,26 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  list = [
+    {
+      'id': 1,
+      'value': 'Soups'
+    },
+    {
+      'id': 2,
+      'value': 'Starters'
+    },
+    {
+      'id': 3,
+      'value': 'Main Course'
+    },
+    {
+      'id': 4,
+      'value': 'Desserts'
+    },
+   
+  ];
 
   openNav() {
     document.getElementById("mySidenav").style.width = "250px";

@@ -8,28 +8,29 @@ import { AmericanComponent } from './american/american.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'indian',
-    pathMatch: 'full'
+    component: FoodListComponent
+    // redirectTo: 'indian',
+    // pathMatch: 'full'
   },
-  {
-  path: '',
-    component: FoodListComponent,
-    children: [
-      {
-        path: 'indian',
-        component: IndianComponent
-      },
-      {
-        path: 'chinese',
-        component: ChineseComponent
-      },
-      {
-        path: 'american',
-        component: AmericanComponent
-      },
+//   {
+//   path: '',
+//     component: FoodListComponent,
+//     children: [
+//       {
+//         path: 'indian',
+//         component: IndianComponent
+//       },
+//       {
+//         path: 'chinese',
+//         component: ChineseComponent
+//       },
+//       {
+//         path: 'american',
+//         component: AmericanComponent
+//       },
   
-]
-  }
+// ]
+//   }
 ];
 
 @NgModule({
